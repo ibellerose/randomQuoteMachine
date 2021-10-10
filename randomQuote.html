@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>randQuote</title>
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+        <script type="text/babel" src="randQuote.js"></script>
+        <style>
+            body{
+                background-color: #5a89eec4;
+            }
+            #quote-box{
+                background-color: rgba(175, 175, 175, 0.849);
+                border: 5px solid white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%,-50%);
+                width: 400px;
+                min-height: 175px;
+                border-radius: 5px;
+            }
+            #text{
+                font-size: 32px;
+                text-align: center;
+            }
+            #author{
+                font-size: 14px;
+                left: 5px;
+                padding-left: 5px;
+            }
+            #tweet-quote{
+                position: fixed;
+                right: 150px;
+                bottom: 10px;    
+                background-color: rgb(59, 179, 226);
+                text-decoration: none;
+                font-size: 28px;
+                color: white;
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                text-align: center;
+            }
+            #new-quote{
+                position: fixed;
+                right: 20px;
+                bottom: 10px;
+                background-color: #5a89eec4;
+                border: none;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            #new-quote:hover{
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="quote-box"></div>
+    </body>
+</html>
